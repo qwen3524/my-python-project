@@ -7,6 +7,6 @@
 
   // Включить автоисправление Ruff при сохранении
   "editor.codeActionsOnSave": {
-    "source.fixAll.ruff": true
+    "source.fixAll.ruff": "explicit"
   }
 }
