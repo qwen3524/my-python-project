@@ -1,0 +1,12 @@
+{
+  // Включить форматирование при сохранении
+  "editor.formatOnSave": true,
+
+  // Сделать Ruff форматтером по умолчанию для Python
+  "editor.defaultFormatter": "charliermarsh.ruff",
+
+  // Включить автоисправление Ruff при сохранении
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ruff": true
+  }
+}

@@ -1,0 +1,35 @@
+[project]
+name = "my-python-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "qwen3524",email = "qwen3.524@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "my_python_project", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.14.4,<0.15.0)"
+]
+
+[tool.ruff]
+# Устанавливаем длину строки 88 символов (стандарт Black)
+line-length = 88
+
+[tool.ruff.lint]
+# Выбираем базовый набор правил: E (ошибки), F (логика), W (предупреждения), I (импорты), C90 (сложность)
+select = ["E", "F", "W", "I", "C90"]
+
+[tool.ruff.format]
+# Стиль кавычек (предпочитаем двойные)
+quote-style = "double"
